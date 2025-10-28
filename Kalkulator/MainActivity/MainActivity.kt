@@ -79,8 +79,5 @@ class MainActivity : AppCompatActivity() {
 
             polje_za_ispis.text = rezultat.toString()
         }
-
     }
-
 }
-
