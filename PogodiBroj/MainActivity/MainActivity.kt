@@ -1,4 +1,4 @@
-package com.example.counter
+package com.example.pogodibroj
 
 import android.os.Bundle
 import android.widget.Button
@@ -52,4 +52,5 @@ class MainActivity : AppCompatActivity() {
             polje_za_ispis.setText("")
         }
     }
+
 }
