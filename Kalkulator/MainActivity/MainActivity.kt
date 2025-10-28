@@ -1,4 +1,4 @@
-package com.example.customapp_1
+package com.example.kalkulator
 
 import android.health.connect.datatypes.units.Velocity
 import android.os.Bundle
@@ -83,3 +83,4 @@ class MainActivity : AppCompatActivity() {
     }
 
 }
+
