@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         var brojac = 0
         var skrivena_rijec = "sifra123"
 
+
         dugme_pogodi.setOnClickListener {
             var unos = polje_za_unos.text.toString()
 
@@ -47,6 +48,7 @@ class MainActivity : AppCompatActivity() {
                 brojac++
                 polje_za_brojac.setText(brojac.toString())
                 polje_za_ispis.setText("Skrivena rijec je pogodjena")
+                dugme_pogodi.isEnabled = false
             } else {
                 brojac++
                 polje_za_brojac.setText(brojac.toString())
@@ -60,6 +62,7 @@ class MainActivity : AppCompatActivity() {
             polje_za_brojac.setText(brojac.toString())
             polje_za_ispis.setText(prazno_polje.toString())
             polje_za_unos.setText(prazno_polje.toString())
+            dugme_pogodi.isEnabled = true
         }
 
         dugme_prikazi.setOnClickListener {
