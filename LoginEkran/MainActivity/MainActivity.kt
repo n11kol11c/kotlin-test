@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
             val malaSlova = "qwertyuiopasdfghjklzxcvbnm"
             val slova = malaSlova + malaSlova.uppercase()
 
-            val imaSlovo = mejl.any { it in slova }
-            val imaBroj = mejl.any { it in brojevi }
+            val imaSlovo = mejl.any { k in slova }
+            val imaBroj = mejl.any { k in brojevi }
 
             return when {
                 !imaSlovo -> -1
@@ -49,9 +49,9 @@ class MainActivity : AppCompatActivity() {
             val specijalni = "!@#\\$%^&*()_+"
             val x = brojevi + slova + specijalni
 
-            val imaSlovo = sifra.any { it in slova }
-            val imaBroj = sifra.any { it in brojevi }
-            val imaKarakter = sifra.any { it in specijalni }
+            val imaSlovo = sifra.any { k in slova }
+            val imaBroj = sifra.any { k in brojevi }
+            val imaKarakter = sifra.any { k in specijalni }
 
             return when {
                 !imaSlovo -> -1
